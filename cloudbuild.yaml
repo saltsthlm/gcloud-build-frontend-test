@@ -5,7 +5,7 @@ steps:
       - "--build-arg"
       - "VITE_REACT_APP_TEST_1=fromCloudbuildYaml"
       - "-t"
-      - "gcr.io/$PROJECT_ID/gh-actions-frontend-test:latest"
+      - "gcr.io/$PROJECT_ID/gh-actions-frontend-test:1926"
       - "."
 images:
-  - "gcr.io/$PROJECT_ID/gh-actions-frontend-test:latest"
+  - "gcr.io/$PROJECT_ID/gh-actions-frontend-test:1926"
