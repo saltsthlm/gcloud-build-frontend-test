@@ -8,6 +8,11 @@ RUN npm install
 
 COPY . .
 
+ARG VITE_REACT_APP_TEST_1
+ENV VITE_REACT_APP_TEST_1=${VITE_REACT_APP_TEST_1}
+
+RUN echo THE VAL IS $VITE_REACT_APP_TEST_1
+
 RUN npm run build
 
 FROM nginx:alpine
